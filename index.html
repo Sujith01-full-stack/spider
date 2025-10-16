@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spider Gallery</title>
+
+  <style>
+    /* ----------- Base Style ----------- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, rgb(247, 250, 251), #b0d5dbf4);
+      color: #0a0c10e8;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #100808;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      animation: fadeInDown 1s ease;
+    }
+
+    h2 {
+      color: #e50202;
+      margin: 30px 0 10px;
+      font-size: 1.4rem;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    /* ----------- Gallery Layout ----------- */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      margin-top: 20px;
+    }
+
+    .frame {
+      background: #000000;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(255, 255, 20, 0.958);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1s ease;
+    }
+
+    .frame:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(252, 235, 3, 0.907);
+    }
+
+    .frame img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .frame img:hover {
+      transform: scale(1.05);
+    }
+
+    .price {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    /* ----------- Footer ----------- */
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #030415;
+    }
+
+    footer span {
+      color: #e63946;
+      font-weight: bold;
+    }
+
+    /* ----------- Animations ----------- */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ----------- Responsive ----------- */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+      .frame {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🕷 Spider Gallery 🕸</h1>
+
+  <!-- 12x18 Section -->
+  <h2>FRAME SIZE (12x18) —> Rs: 699 to 799</h2>
+  <div class="gallery">
+    <div class="frame">
+      <img src="12x18.jpg" alt="12x18 Frame 1" />
+      <p class="price">12x18 Frame - Rs 799</p>
+    </div>
+    <div class="frame">
+      <img src="12x18.jpg 1.jpg" alt="12x18 Frame 2" />
+      <p class="price">12x18 Frame - Rs 799</p>
+    </div>
+  </div>
+
+  <!-- 10x15 Section -->
+  <h2>FRAME SIZE (10x15) —> Rs: 549 to 599</h2>
+  <div class="gallery">
+    <div class="frame">
+      <img src="10x15.jpg" alt="10x15 Frame 1" />
+      <p class="price">10x15 Frame - Rs 599</p>
+    </div>
+    <div class="frame">
+      <img src="10x15 1.jpg" alt="10x15 Frame 2" />
+      <p class="price">10x15 Frame - Rs 599</p>
+    </div>
+  </div>
+
+  <!-- 12x8 Section -->
+  <h2>FRAME SIZE (12x8) —> Rs: 299 to 349</h2>
+  <div class="gallery">
+    <div class="frame">
+      <img src="12x8.jpg" alt="12x8 Frame 1" />
+      <p class="price">12x8 Frame - Rs 349</p>
+    </div>
+    <div class="frame">
+      <img src="12x8 9.jpg" alt="12x8 Frame 2" />
+      <p class="price">12x8 Frame - Rs 349</p>
+    </div>
+  </div>
+
+  <!-- 6x8 Section -->
+  <h2>FRAME SIZE (6x8) —> Rs: 199 to 249</h2>
+  <div class="gallery">
+    <div class="frame">
+      <img src="6x8 3.jpg" alt="6x8 Frame 1" />
+      <p class="price">6x8 Frame - Rs 249</p>
+    </div>
+    <div class="frame">
+      <img src="6x8 4.jpg" alt="6x8 Frame 2" />
+      <p class="price">6x8 Frame - Rs 249</p>
+    </div>
+  </div>
+
+  <!-- 6x6 Section -->
+  <h2>FRAME SIZE (6x6) —> Rs: 169</h2>
+  <div class="gallery">
+    <div class="frame">
+      <img src="6x6 2.jpg" alt="6x6 Frame 1" />
+      <p class="price">6x6 Frame - Rs 169</p>
+    </div>
+    <div class="frame">
+      <img src="6x6 4.jpg" alt="6x6 Frame 2" />
+      <p class="price">6x6 Frame - Rs 169</p>
+    </div>
+  </div>
+
+  <!-- 6x4 Section -->
+  <h2>FRAME SIZE (6x4) —> Rs: 149</h2>
+  <div class="gallery">
+    <div class="frame">
+      <img src="6x4.jpg" alt="6x4 Frame 1" />
+      <p class="price">6x4 Frame - Rs 149</p>
+    </div>
+    <div class="frame">
+      <img src="6x4 2.jpg" alt="6x4 Frame 2" />
+      <p class="price">6x4 Frame - Rs 149</p>
+    </div>
+  </div>
+
+  <!-- 4x4 Section -->
+  <h2>FRAME SIZE (4x4) —> Rs: 99</h2>
+  <div class="gallery">
+    <div class="frame">
+      <img src="4x4.jpg" alt="4x4 Frame 1" />
+      <p class="price">4x4 Frame - Rs 99</p>
+    </div>
+    <div class="frame">
+      <img src="4x4 2.jpg" alt="4x4 Frame 2" />
+      <p class="price">4x4 Frame - Rs 99</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>@ 2025 <span>Spider_Gallery</span> | Designed with ❤️ by Sujith</p>
+  </footer>
+  </body>
+</html>
